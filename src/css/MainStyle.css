@@ -1,0 +1,184 @@
+
+.container {
+    padding: 5px !important;
+}
+
+.alinearDerecha {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end !important;
+}
+
+.alinearIzquierda {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start !important;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+
+/* --------- CSS relacionado a otros componentes  ------------------------------------- */
+.button-success {
+  width: 210px;
+  height: 50px;
+  margin-left: 20px;
+  font-size: 18px !important;
+  border-radius: 3px !important;
+  background: #329592 !important;
+  background-color: #329592 !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-align: center;
+}
+
+.button-success:hover {
+    color: #fff !important;
+    background-color: #9d2449 !important;
+    border-color: #9d2449 !important;
+}
+
+.alert-danger {
+    background-color: #f2dede !important;
+    color: #545454 !important;
+    border: 2px solid #d0021b !important;
+    text-align: center;
+}
+/* ------------------------------------------------------------------------------------- */
+
+
+/* --------- CSS relacionado a las tablas de bootstrap --------------------------------- */
+table {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.table-bordered,
+.table-bordered>tbody>tr>td,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>td,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>thead>tr>th {
+    border: 1px solid #ddd !important;
+}
+
+.tableHeader {
+    background-color: #9e2244 !important;
+    color: white;
+    height: 60px;
+}
+
+th,
+td {
+    border: solid 3px #fff !important;
+    text-align: center;
+    padding: 10px;
+}
+
+tbody {
+    color: #444243;
+}
+
+/*Filas impares de una tabla*/
+tr:nth-child(2n + 1) {
+    background-color: #dddddd;
+}
+
+/*Filas pares de una tabla*/
+tr:nth-child(2n) {
+    background-color: #efedee;
+}
+
+.trHeader {
+    background-color: #9e2244 !important;
+    color: white !important;
+}
+
+.iconFromTable {
+    cursor: pointer;
+  }
+  
+  .iconFromTable:hover {
+    color: #9e2244 !important;
+  }
+/* ------------------------------------------------------------------------------------- */
+
+
+
+/* --------- CSS relacionado al modal -------------------------------------------------- */
+.modal-title {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+.bodyModal {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+}
+
+.cerrarModal {
+    background-color: #9d2449;
+}
+/* ------------------------------------------------------------------------------------- */
+
+
+
+/* --------- CSS relacionado a los controles de los formularios   ---------------------- */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    font-family: inherit !important;
+    background-color: #efeeee !important;
+    margin: 10px auto;
+    width: 100%;
+    height: 39px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+.form-control:focus {
+    border-color: #5cb85c;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+    -webkit-transition: border-color ease-in-out 0.15s,
+        box-shadow ease-in-out 0.15s !important;
+    -moz-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s !important;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s !important;
+}
+
+.form-control,
+output {
+    font-size: 18px;
+    line-height: 1.428571429;
+    color: #555;
+    display: block;
+}
+
+.form-control,
+.iconElemento {
+    font-family: inherit !important;
+    background-color: #efeeee !important;
+    margin: 10px auto;
+    height: 39px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* ------------------------------------------------------------------------------------- */
