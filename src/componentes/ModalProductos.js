@@ -56,7 +56,7 @@ function ModalProductos({ show, setShow, producto, setProducto, setRegistroModif
   }
   
 
-  const muestroRegistroDuplicado = () => {
+  const mostrarAlerta = () => {
 
     if (showRegistroDuplicado) {
       return (
@@ -133,7 +133,8 @@ function ModalProductos({ show, setShow, producto, setProducto, setRegistroModif
         <Form>
           <Form.Group className="form-group">
 
-            {muestroRegistroDuplicado()}
+            {mostrarAlerta()}
+
             <Row className={opcion === "Ver" ? "disabled" : "false"}>
               <Col xl={6}>
                 <InputNumber
@@ -206,15 +207,16 @@ function ModalProductos({ show, setShow, producto, setProducto, setRegistroModif
       </Modal.Body>
                 
       <Modal.Footer>  
-          {ButtonAgregar()}
-          <Button variant="outline-secondary" onClick={()=> handleClose()}>
-            Cerrar
-          </Button>
-        </Modal.Footer>
-    </Modal>
-    
-  );
 
+        <ButtonAgregar />
+
+        <Button variant="outline-secondary" onClick={()=> handleClose()}>
+          Cerrar
+        </Button>
+
+      </Modal.Footer>
+    </Modal>
+  );
 }
 
 export default ModalProductos;

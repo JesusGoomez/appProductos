@@ -21,8 +21,6 @@ function InputText({
     return onChange(value)
   }
 
-
-
   const ComprueboAdvertencias = () => {
 
     if (campoObligatorio === true && showAlert === true) {

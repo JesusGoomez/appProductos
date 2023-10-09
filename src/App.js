@@ -26,8 +26,6 @@ function App() {
   //state encargado ver detectar si fue una opcion de agregar datos, o ver datos
   const [opcion, setOpcion] = useState({});
 
-  const [montado, setMontado] = useState(false);
-
 
   //Consultamos los datos del producto ya sea desde la api o desde el localstorage (si es que algun producto fuese agregado)
   useEffect(() => {
@@ -81,8 +79,7 @@ function App() {
       price : item.items[0].price,
     }))
 
-    console.log(listProductos);
-
+   
     //Asignamos el listado anterior al state
     setDatosProductos(listProductos);
 
@@ -102,7 +99,7 @@ function App() {
   }
 
   
-  //ASignamos el elemento seleccionado del listado, al state
+  //Asignamos el elemento seleccionado del listado, al state
   const envioDatosModal = (item, index) => {
     setProducto({
       number : item.number,
@@ -125,7 +122,7 @@ function App() {
   }
 
   
-  const imprimoTablaProductos = () => {
+  const TablaProductos = () => {
     return (
       <>
         <div className="table-responsive-xl" style={{marginTop: "80px"}}>
@@ -175,8 +172,7 @@ function App() {
 
       <h1 style= {{textAlign: 'center', marginTop: '20px'}}> Listado de productos </h1>
      
-     {imprimoTablaProductos()}
-
+      <TablaProductos />
 
       <Row>
         <div className='alinearDerecha'>
@@ -189,14 +185,8 @@ function App() {
           </Button>
         </div>
       </Row> 
-      
-
-      
-      
-
     </Container>
    
-
   );
 }
 
